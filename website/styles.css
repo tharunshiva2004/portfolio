@@ -1,0 +1,145 @@
+/* Dark mode theme */
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #f2f2f2;
+  --accent-color: #a54aff;
+  --secondary-color: #313131;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+.hero, .about, .portfolio, .contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.image-scale{
+  max-width: 50%;
+  height: auto;
+}
+
+.cta {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+footer {
+text-align: center;
+color:#858585;
+}
+
+.skills {
+  padding: 4rem 2rem;
+  background-color: var(--bg-color);
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  -ms-grid-row-align: center;
+}
+
+.skill-item {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.skill-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.skill-item p {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: var(--accent-color);
+}
+
+.contact-links i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
